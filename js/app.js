@@ -27,16 +27,20 @@ $(document).ready(function() {
 	$( ".instructor" ).hover(
 		function() {
 			$('.instructor-wrap').fadeOut();
+			$('#timefor-instructors').css('color', 'black');
 		}, function() {
 			$('.instructor-wrap').fadeIn();
+			$('#timefor-instructors').css('color', 'white');
 		}
 	);
 
 	$( ".client" ).hover(
 		function() {
 			$('.client-wrap').fadeOut();
+			$('#timefor-clients').css('color', 'black');
 		}, function() {
 			$('.client-wrap').fadeIn();
+			$('#timefor-clients').css('color', 'white');
 		}
 	);
 
