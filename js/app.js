@@ -23,6 +23,7 @@ $(document).ready(function() {
 	/*
 	*	Instructor and client hover effect - second page
 	*/
+	//hover
 
 	$( ".instructor" ).hover(
 		function() {
