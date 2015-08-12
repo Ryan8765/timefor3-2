@@ -319,6 +319,9 @@ body {
   position: absolute;
   z-index: 10000000; }
 
+#animate-text {
+  color: #B7B7B7; }
+
 /* Animations
 =====================================*/
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
