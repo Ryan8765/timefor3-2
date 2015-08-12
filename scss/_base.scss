@@ -1,0 +1,507 @@
+// =============================
+// Base Styles
+// =============================
+
+* {
+	-webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+	-moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+	box-sizing: border-box;         /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
+}
+
+body {
+	color: white;
+}
+
+
+/* Classes
+=====================================*/
+
+.client-wrap {
+	position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;
+	background-image: url("../images/client-wrap.png");
+	background-position: center; 
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.instructor-wrap {
+	position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;
+	background-image: url("../images/instructor-wrap.png");
+	background-position: center; 
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.opacity-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color:white;
+}
+
+.sign-me-up {
+	position: absolute;
+	width: 150px;
+	left: 25px;
+	bottom: 20px;
+	font-size: .8em;
+}
+
+.container2 {
+	display: none;
+	input {
+		padding: 5px;
+		width: 100%;
+	}
+}
+
+
+.container1 {
+	width: 100%;
+	height: 100%;
+}
+
+.signup-widget {
+	padding: 10px;
+	font-size: 2.5em;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	width: 250px;
+	height: 250px;
+	border: 3px solid white;
+	@include border-radius(20px);
+	z-index: 2000;
+
+	.sign-me-up {
+		cursor: pointer;
+	}
+}
+
+.navigation-menu {
+	float: right;
+	height: 100%;
+	ul {
+		height: 100%;
+		padding-top: 50px;
+		padding-right: 10px;
+	}
+
+	li {
+		height: 12.4%;
+		text-align: right;
+	}
+
+	a {
+		color: white;
+		transition: color 1s;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #56FE03;
+	}
+
+	.fa {
+		font-size: 1.6em;
+	}
+}
+
+.signup {
+	position: relative;
+	background-image: url("../images/end.jpg");
+	background-position: center; 
+	background-size: cover;
+    background-repeat: no-repeat;
+
+    img {
+    	height: 80px;
+    }
+}
+
+
+.bullet-points-container {
+	font-size: 1.5em;
+	margin-top: 50px;
+}
+
+
+.bullet-points-left {
+	width: 50%;
+	float: left;
+
+	ul {
+		list-style-type: disc;
+		float: right;
+		padding-right: 40px;
+		// list-style-position: inside;
+	}
+
+	li {
+		height: 50px;
+		// margin-left: 250px;
+	}
+}
+
+.bullet-points-right {
+	width: 50%;
+	float: left;
+
+	ul {
+		list-style-type: disc;
+		float: left;
+		// margin-left: 40px;
+		// list-style-position: inside;
+	}
+
+	li {
+		height: 50px;
+		margin-left: 50px;
+	}
+}
+
+.clock-icon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.client-page {
+	position: absolute;
+	right: 50%;
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/client2.jpg");
+	background-position: center top; 
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.animated-slider {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.instructor-page {
+	position: absolute;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/instructor2.jpg");
+	background-position: center; 
+	background-size: cover;
+    background-repeat: no-repeat;
+    // overflow-y: scroll;
+}
+
+.home {
+	background-image: url("../images/scheduling4.jpg");
+	background-position: center; 
+	background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+// .home-cover {
+	// background-color: rgba(0, 0, 0, 0.5);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+// }
+
+.index-logo {
+	width: 65%;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.centered {
+	text-align: center;
+}
+
+
+.compatability {
+	position: absolute;
+	font-size: 1.5em;
+	right: 10px;
+	bottom: 10px;
+
+	.compatability-icon {
+		color: white;
+		font-size: 1.5em;
+	}
+}
+
+
+.instructor-client-page {
+	position: relative;
+	overflow-x: hidden;
+
+	.text {
+		position: absolute;
+		text-align: center;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		font-size: 1.5em;
+	}
+}
+
+.instructor {
+	cursor: pointer;
+	width: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-image: url("../images/trainer-white.jpg");
+	background-position: center right; 
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.client {
+	// overflow-y: scroll;
+	cursor: pointer;
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: url("../images/client-white.jpg");
+	background-position: center right;
+	background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.centered-caption {
+	text-align: center;
+	position: absolute;
+	font-size: 3em;
+	margin: auto;
+	height: 100px;
+	margin: auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	pointer-events: none;
+}
+
+.centered-horizontal-caption {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	font-size: 2.5em;
+	padding-top: 100px;
+}
+
+.logo-small {
+	position: absolute; 
+	left: 0;
+	top: 0;
+	width: 200px;
+
+	img {
+		width: 100%;
+	}
+}
+
+
+
+
+/* ID
+=====================================*/
+
+#responsive-menu {
+	display: none;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+
+	.menu-icon {
+		font-size: 1.5em;
+		color: white;
+		text-decoration:none;
+	}
+}
+
+#sidr {
+	display: none;
+	position: absolute;
+	z-index: 10000000;
+}
+
+/* Animations
+=====================================*/
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: #AAAAAA !important;
+}
+
+
+/* media queries
+=====================================*/
+@media (max-width: 850px) {
+
+	.bullet-points-right, .bullet-points-left {
+		width: 100%;
+
+		ul {
+			width: 90%;
+			float: none;
+			margin: 0;
+			margin-right: auto;
+			margin-left: auto;
+			list-style-position:inside;
+		}
+
+		li {
+			height: 30px;
+			margin: 0;
+		}
+	}
+
+	.compatability {
+	  	font-size: .9em;
+	  	top: 25px;
+	  	right: 5px;
+	  }
+
+	.centered-horizontal-caption {
+		font-size: 2em;
+		padding-top: 70px;
+	}
+
+	.centered-caption {
+		font-size: 2em;
+	}
+
+	.instructor-client-page {
+		.text {
+			font-size: 1.1em;
+		}
+	}
+
+	.logo-small {
+		width: 130px;
+	}
+}
+//end 850 query
+
+
+@media (max-width: 500px) {
+
+	.bullet-points-container {
+		font-size: 1.0em;
+	}
+
+	.bullet-points-right, .bullet-points-left {
+		
+		width: 100%;
+
+		ul {
+			width: 90%;
+			float: none;
+			margin: 0;
+			margin-right: auto;
+			margin-left: auto;
+			list-style-position:inside;
+		}
+
+		li {
+			height: 20px;
+			margin: 0;
+		}
+	
+	}
+
+	.centered-horizontal-caption {
+		font-size: 1.3em;
+		padding-top: 70px;
+	}
+
+	.centered-caption {
+		font-size: 1.3em;
+	}	
+  
+  .signup-widget {
+  	font-size: 2em;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+  	top: 0; left: 0; bottom: 0; right: 0;
+
+	img {
+		height: 50px;
+	}
+  }
+
+  .navigation-menu {
+  	display: none;
+  }
+
+
+  #responsive-menu {
+  	display: block;
+  }
+
+  .compatability {
+  	font-size: .9em;
+  	top: 25px;
+  	right: 5px;
+  }
+
+}
+//end 500px media query
+
+
+@media only screen and (max-height: 600px) {
+    .logo-small {
+		width: 130px;
+	}
+
+	.signup-widget {
+	  	font-size: 2em;
+		width: 200px;
+		height: 200px;
+		margin: auto;
+	  	top: 0; left: 0; bottom: 0; right: 0;
+
+		img {
+			height: 50px;
+		}
+	  }
+}
+
+
+@media only screen and (max-height: 400px) {
+
+	.sm-hide {
+		display: none;
+	}
+
+	.bullet-points-container {
+		margin-top: 20px;
+	}
+
+	.centered-horizontal-caption {
+		padding-top: 10px;
+	}
+
+}
+
+
+
+
+
+

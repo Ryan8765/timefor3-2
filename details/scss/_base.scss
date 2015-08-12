@@ -1,0 +1,293 @@
+// =============================
+// Base Styles
+// =============================
+
+* {
+	-webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+	-moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+	box-sizing: border-box;         /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
+}
+
+html, body {
+	color: white;
+	background-color: #9DC3E6;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Classes
+=====================================*/
+
+#responsive-menu {
+	display: none;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+
+	.menu-icon {
+		font-size: 1.5em;
+		color: white;
+		text-decoration:none;
+	}
+}
+
+.form-container {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contact-form {
+
+	form {
+		margin-top: 100px;
+	}
+	
+
+	input {
+		margin-top: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: .9em;
+	}
+
+	textarea {
+		margin-top: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 1.1em;
+	}
+
+	.full {
+		width: 100%;
+	}
+}
+
+.submit-btn {
+	font-size: 1em;
+	font-weight: bold;
+	background-color: #55FA03;
+	width: default;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background-color: #B1FFA7;
+}
+
+.clear:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.half-column {
+	float: left;
+	width: 50%;
+}
+
+.footer {
+	position: absolute;
+	text-align:center;
+	font-size: .9em;
+	color: black;
+	bottom: 10px; left: 0; right: 0;
+}
+
+.navigation {
+
+	a {
+		color: white;
+		text-decoration: none;
+		 -webkit-transition: color 1s; /* Safari */
+    	transition: color 1s;
+	}
+
+	a:hover {
+		color: #56FE03;
+	}
+
+	ul {
+		float: right;
+		height: 117px;
+		padding: 0;
+		margin: 0;
+		margin-left: 200px;
+		padding-top: 45px;
+	}
+
+	li {
+		float: left;
+		height: 117px;
+		padding-right: 50px;
+	}
+
+
+	.fa {
+		font-size: 1.5em;
+	}
+
+}
+
+.nav-container {
+	background-image: url("../images/timefor-background.jpg");
+	background-position: center; 
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fullpage-container {
+	position: relative;
+	height: 100%;
+	background-color: #9DC3E6;
+}
+
+
+.logo-small {
+	position: absolute; 
+	left: 0;
+	top: 0;
+	width: 200px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.content-container {
+	background-color: #9DC3E6;
+	margin-top: 30px;
+	color: black;
+	padding-bottom: 100px;
+	position: relative;
+	padding-bottom: 100px;
+
+	h2 {
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 1.7em;
+		margin-top: 50px;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 1.3em;
+		line-height: 1.3;
+		margin-top: 16px;
+	}
+
+	a {
+		color: black;
+	}
+
+	a:hover {
+		color: #656565;
+	}
+}
+
+.angellist_jobs {
+	margin-top: 50px;
+}
+
+.angellist_jobs-tags {
+	color: #5D5D5D !important;
+}
+
+.row {
+	width: 75%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.active {
+	color: #56FE03 !important;
+	border-bottom: 2px solid #56FE03;
+}
+
+/* ------------
+=====================================*/
+
+@media (max-width: 1100px) {
+
+	.navigation {
+		li {
+			padding-right: 20px;
+		}
+	}
+
+
+}
+//end 1100px media query
+
+@media (max-width: 860px) {
+	#responsive-menu {
+		display: block;
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	
+
+	.content-container {
+		h2 {
+			font-size: 1.6em;
+		}
+	}
+
+	.half-column {
+		float: none;
+		width: 100%;
+	}
+
+	.contact-form {
+
+		form {
+			margin-top: 40px;
+		}
+	}
+
+
+
+}
+
+
+@media (max-width: 550px) {
+	.content-container {
+		h2 {
+			font-size: 1.2em;
+		}
+	}
+
+	.row {
+		width: 90%;
+	}
+}
+
+
+
+
+

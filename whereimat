@@ -1,0 +1,7 @@
+the animate slider - when you resize the viewport it is off. Think I need to modify it so that the animate-slider div doesn't animate - but the client and instructor pages do instead. 
+
+
+
+- when the ratio of length to height gets too big - stuff gets cut off on some pages. 
+
+- need to bring navigation above responsive menu.
