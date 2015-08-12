@@ -270,7 +270,7 @@ body {
   top: 0;
   bottom: 0;
   background-image: url("../images/client-white.jpg");
-  background-position: center right;
+  background-position: center left;
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -422,10 +422,18 @@ body {
   .sm-hide {
     display: none; }
 
+  .centered-horizontal-caption {
+    padding-top: 10px; }
+
   .bullet-points-container {
+    font-size: 1.0em;
     margin-top: 20px; }
 
   .centered-horizontal-caption {
-    padding-top: 10px; } }
+    font-size: 1.3em;
+    padding-top: 5px; }
+
+  .bullet-points-right li, .bullet-points-left li {
+    height: 20px; } }
 
 /*# sourceMappingURL=application.css.map */
