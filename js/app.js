@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 
 	/*
-	*	Instructor and client hover effect
+	*	Instructor and client hover effect - second page
 	*/
 
 	$( ".instructor" ).hover(
