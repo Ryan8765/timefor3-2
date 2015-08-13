@@ -1,7 +1,13 @@
 $(document).ready(function() {
 //--------------------------------
+	
+	//globals
 	var VIEWPORT_WIDTH = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 	var VIEWPORT_HEIGHT = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+	//used for animation functions which change the size of instructor and client text on page two of the site.  
+	var INSTRUCTOR_FONT_SIZE = null;
+	var CLIENT_FONT_SIZE = null;
+
 
 
 
@@ -23,25 +29,105 @@ $(document).ready(function() {
 	/*
 	*	Instructor and client hover effect - second page
 	*/
-	//hover
+	
+	//function to animate instructor text a little bigger.
+	function animate_instructor_text_big(time) {
+		var element = $('#timefor-instructors');
+		//get current font size
+		var originalFontSize = element.css('font-size');
+		//strip the "px" out of the font size value
+		originalFontSize = originalFontSize.replace("px", "");
 
+
+		//if the global instructor_font_size variable hasn't been initiated - initiate it.
+		if ( INSTRUCTOR_FONT_SIZE === null ) {
+			INSTRUCTOR_FONT_SIZE = originalFontSize;
+		}
+		//end if
+
+		var enlargedFontSize = 1.2 * originalFontSize;
+
+		//animate the element
+		element.animate({
+		  
+		    fontSize: enlargedFontSize + "px"
+		  
+		}, time);
+	}
+
+	//function to animate client text a little bigger.
+	function animate_client_text_big(time) {
+		var element = $('#timefor-clients');
+		//get current font size
+		var originalFontSize = element.css('font-size');
+		//strip the "px" out of the font size value
+		originalFontSize = originalFontSize.replace("px", "");
+		//enlarged font size.
+		var enlargedFontSize = 1.2 * originalFontSize;
+
+		//if the global instructor_font_size variable hasn't been initiated - initiate it.
+		if ( CLIENT_FONT_SIZE === null ) {
+			CLIENT_FONT_SIZE = originalFontSize;
+		}
+		//end if
+
+		//animate the element
+		element.animate({
+		  
+		    fontSize: enlargedFontSize + "px"
+		  
+		}, time);
+	}
+
+	//function to animate client text back to original size.
+	function animate_client_text_small(time) {
+		var element = $('#timefor-clients');
+
+		//animate the element
+		element.animate({
+		  
+		    fontSize: CLIENT_FONT_SIZE + "px"
+		  
+		}, time);
+	}
+
+	//function to animate instructor text back to original size.
+	function animate_instructor_text_small(time) {
+		var element = $('#timefor-instructors');
+
+		//animate the element
+		element.animate({
+		  
+		    fontSize: INSTRUCTOR_FONT_SIZE + "px"
+		  
+		}, time);
+	}
+
+
+	//handle the events for the hover effect on page two of the website.
 	$( ".instructor" ).hover(
 		function() {
 			$('.instructor-wrap').fadeOut();
 			$('#timefor-instructors').css('color', 'black');
+			animate_instructor_text_big(500)
+
 		}, function() {
 			$('.instructor-wrap').fadeIn();
 			$('#timefor-instructors').css('color', 'white');
+			animate_instructor_text_small(500)
 		}
 	);
+
 
 	$( ".client" ).hover(
 		function() {
 			$('.client-wrap').fadeOut();
 			$('#timefor-clients').css('color', 'black');
+			animate_client_text_big(500);
 		}, function() {
 			$('.client-wrap').fadeIn();
 			$('#timefor-clients').css('color', 'white');
+			animate_client_text_small(500);
 		}
 	);
 

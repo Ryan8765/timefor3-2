@@ -329,6 +329,44 @@ body {
 
 /* media queries
 =====================================*/
+@media (max-width: 1400px) {
+  .instructor-page {
+    background-image: url("../images/instructor2-1500.jpg"); }
+
+  .client-page {
+    background-image: url("../images/client2-1500.jpg"); }
+
+  .home {
+    background-image: url("../images/scheduling4-1500.jpg"); }
+
+  .signup {
+    position: relative;
+    background-image: url("../images/end-1500.jpg"); }
+
+  .client {
+    background-image: url("../images/client-white-1500.jpg"); }
+
+  .instructor {
+    background-image: url("../images/trainer-white-1500.jpg"); } }
+@media (max-width: 600px) {
+  .instructor-page {
+    background-image: url("../images/instructor2-600.jpg"); }
+
+  .client-page {
+    background-image: url("../images/client2-600.jpg"); }
+
+  .home {
+    background-image: url("../images/scheduling4-600.jpg"); }
+
+  .signup {
+    position: relative;
+    background-image: url("../images/end-600.jpg"); }
+
+  .client {
+    background-image: url("../images/client-white-600.jpg"); }
+
+  .instructor {
+    background-image: url("../images/trainer-white-600.jpg"); } }
 @media (max-width: 850px) {
   .bullet-points-right, .bullet-points-left {
     width: 100%; }
