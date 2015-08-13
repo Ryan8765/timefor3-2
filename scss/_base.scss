@@ -392,33 +392,33 @@ body {
 }
 //end media 1300
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
 	.instructor-page {
-		background-image: url("../images/instructor2-600.jpg");
+		background-image: url("../images/instructor2-800.jpg");
 	}
 
 	.client-page {
-		background-image: url("../images/client2-600.jpg");
+		background-image: url("../images/client2-800.jpg");
 	}
 
 	.home {
-		background-image: url("../images/scheduling4-600.jpg");
+		background-image: url("../images/scheduling4-800.jpg");
 	}
 
 	.signup {
 		position: relative;
-		background-image: url("../images/end-600.jpg");
+		background-image: url("../images/end-800.jpg");
 	}
 
 	.client {
 
-		background-image: url("../images/client-white-600.jpg");
+		background-image: url("../images/client-white-800.jpg");
 	}
 
 
 	.instructor {
-		background-image: url("../images/trainer-white-600.jpg");
+		background-image: url("../images/trainer-white-800.jpg");
 	}
 
 }
@@ -582,6 +582,15 @@ body {
 			height: 20px;
 		}
 	}
+
+	.navigation-menu {
+	  	display: none;
+	  }
+
+
+	  #responsive-menu {
+	  	display: block;
+	  }
 
 }
 
